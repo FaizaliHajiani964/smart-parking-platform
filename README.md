@@ -12,13 +12,13 @@ The document grows every week as the course covers a new project-management topi
 
 | File | Version | Date | Contents |
 |---|---|---|---|
-| `SmartParking_SRS_v1.0.docx` | 1.0 | Sep 10, 2026 | Vision & Scope, market research and competitive analysis, overall description, functional and non-functional requirements, 18 use cases |
+| `SmartParking_SRS_v1.0.docx` | 1.0 | Sep 8, 2026 | Vision & Scope, market research and competitive analysis, overall description, functional and non-functional requirements, 18 use cases |
 
 ## Version history
 
 | Version | Date | Change |
 |---|---|---|
-| 1.0 | 2026-09-10 | HW1 – Project Kickoff & SRS Initiation |
+| 1.0 | 2026-09-8 | HW1 – Project Kickoff & SRS Initiation |
 
 ## Repository layout
 
