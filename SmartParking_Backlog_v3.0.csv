@@ -1,0 +1,85 @@
+Card ID,Title,HW3 Category,Actor,WBS Parent,WBS Module,Story Points,Sprint,Board Column
+L-01,Driver registration with email verification code,Login,Driver,1.1.1,Accounts-Auth-Security,3,,Backlog
+L-02,Apple sign-in (OAuth),Login,Driver,1.1.2,Accounts-Auth-Security,3,,Backlog
+L-03,Google sign-in (OAuth),Login,Driver,1.1.2,Accounts-Auth-Security,2,,Backlog
+L-04,Password reset and account recovery,Login,Driver,1.1.4,Accounts-Auth-Security,2,,Backlog
+L-05,Operator staff login with multi-factor authentication,Login,Operator,1.2.3,Accounts-Auth-Security,3,,Backlog
+L-06,30-minute session expiry and token refresh,Login,Both,1.2.3,Accounts-Auth-Security,2,,Backlog
+L-07,Immediate session and API-token revocation on user removal,Login,Operator,1.2.4,Accounts-Auth-Security,2,,Backlog
+L-08,"Login rate limiting, CAPTCHA and device checks",Login,Both,1.3.1,Accounts-Auth-Security,5,,Backlog
+L-09,Staff invitation and facility assignment,Login,Operator,1.2.2,Accounts-Auth-Security,3,,Backlog
+L-10,"Role and permission model (Operator Admin, Facility Manager, Finance, Attendant, Platform Admin)",Login,Operator,1.2.1,Accounts-Auth-Security,5,Sprint 1,To Do
+U-01,Map view with facility pins and availability state,UI,Driver,2.2.1,Availability-Map-Nav,3,,Backlog
+U-02,Destination and current-location search with arrival time and duration,UI,Driver,2.2.2,Availability-Map-Nav,5,,Backlog
+U-03,"Filter panel (price, distance, covered, EV, height, 24/7)",UI,Driver,2.2.3,Availability-Map-Nav,2,,Backlog
+U-04,Facility list view,UI,Driver,2.2.3,Availability-Map-Nav,1,,Backlog
+U-05,"Facility detail page (photos, hours, entrance instructions)",UI,Driver,2.2.4,Availability-Map-Nav,2,,Backlog
+U-06,Booking flow screens with all-in price display (4-tap target),UI,Driver,3.1.2,Reservations-Permits,5,,Backlog
+U-07,Modify and cancel reservation screens,UI,Driver,3.1.4,Reservations-Permits,3,,Backlog
+U-08,Active session screen with extend action,UI,Driver,3.2.1,Reservations-Permits,2,,Backlog
+U-09,QR entry credential screen with offline cache,UI,Driver,3.3.1,Reservations-Permits,1,,Backlog
+U-10,Vehicle profile management screens (up to 5 vehicles),UI,Driver,1.1.3,Accounts-Auth-Security,3,,Backlog
+U-11,Saved payment methods screen,UI,Driver,4.1.3,Payments-Finance,1,,Backlog
+U-12,"Notification preference screen (per-channel, per-event toggles)",UI,Driver,7.2.1,Notifications,1,,Backlog
+U-13,Navigation hand-off buttons and in-app fallback directions,UI,Driver,2.3.1,Availability-Map-Nav,3,,Backlog
+U-21,In-app fallback directions and entrance description,UI,Driver,2.3.2,Availability-Map-Nav,2,,Backlog
+U-14,"Facility add, edit and remove forms",UI,Operator,5.1.1,Operator-Dashboard,2,,Backlog
+U-15,Photo and entrance-instruction upload interface,UI,Operator,5.1.2,Operator-Dashboard,2,,Backlog
+U-16,"Rate schedule editor (hourly, daily, event, monthly)",UI,Operator,5.2.1,Operator-Dashboard,2,,Backlog
+U-17,Dynamic pricing rule builder with floor and ceiling,UI,Operator,5.2.2,Operator-Dashboard,3,,Backlog
+U-18,Live facility and portfolio occupancy dashboard with 24-hour trend,UI,Operator,5.3.1,Operator-Dashboard,5,,Backlog
+U-19,Reservation search and manual override screen,UI,Operator,5.4.1,Operator-Dashboard,5,,Backlog
+U-20,Lane-assist attendant view including drive-up sale,UI,Operator,5.4.2,Operator-Dashboard,5,,Backlog
+B-01,"Cloud environment, containers, managed relational database and message queue",Backend,System,8.1.1,Platform-Hardware,8,Sprint 1,To Do
+B-02,CI/CD pipeline and dev/stage/prod environments,Backend,System,8.1.2,Platform-Hardware,5,Sprint 1,To Do
+B-03,"Monitoring, logging and uptime alerting",Backend,System,8.1.3,Platform-Hardware,5,Sprint 1,To Do
+B-04,Occupancy counter service consuming gate and sensor events,Backend,System,2.1.1,Availability-Map-Nav,8,,Backlog
+B-05,Availability staleness tracking and degraded-mode flag,Backend,System,2.1.2,Availability-Map-Nav,2,,Backlog
+B-06,Waitlist notification when no availability,Backend,Driver,2.1.3,Availability-Map-Nav,3,,Backlog
+B-07,Map provider integration and geocoding,Backend,System,2.2.1,Availability-Map-Nav,2,,Backlog
+B-08,Inventory hold and double-sell prevention,Backend,System,3.1.1,Reservations-Permits,8,,Backlog
+B-09,Cancellation-policy engine and automatic refund calculation,Backend,System,3.1.3,Reservations-Permits,5,,Backlog
+B-10,Session extension with capacity check and additional charge,Backend,Driver,3.2.1,Reservations-Permits,3,,Backlog
+B-11,Overstay rate handling and nearby alternatives,Backend,Driver,3.2.2,Reservations-Permits,3,,Backlog
+B-12,QR credential generation service with offline caching,Backend,Driver,3.3.1,Reservations-Permits,2,,Backlog
+B-13,License-plate registration for LPR authorization,Backend,Driver,3.3.2,Reservations-Permits,3,,Backlog
+B-14,Monthly permit purchase with auto-renewal billing,Backend,Driver,3.4.1,Reservations-Permits,5,,Backlog
+B-15,Permit waitlist and 7-day renewal reminders,Backend,Driver,3.4.2,Reservations-Permits,3,,Backlog
+B-16,Payment-provider integration with card tokenization and webhooks,Backend,System,4.1.1,Payments-Finance,8,,Backlog
+B-17,Apple Pay and Google Pay wallet integration,Backend,Driver,4.1.2,Payments-Finance,5,,Backlog
+B-18,Failed-payment retry and 5-minute hold release,Backend,System,4.1.3,Payments-Finance,2,,Backlog
+B-19,Verified payment method with name match before first reservation,Backend,Driver,1.3.2,Accounts-Auth-Security,3,,Backlog
+B-20,Per-account reservation limits and no-show rules,Backend,System,1.3.3,Accounts-Auth-Security,3,,Backlog
+B-21,Public API and webhook specification for entry/exit events,Backend,Operator,8.2.1,Platform-Hardware,5,,Backlog
+B-22,Pluggable vendor adapters for gate controllers and LPR cameras,Backend,Operator,8.2.2,Platform-Hardware,8,,Backlog
+B-23,Sub-1-second entry authorization path,Backend,System,8.2.3,Platform-Hardware,5,,Backlog
+B-24,Facility edge service with 24-hour local buffering and resync,Backend,Operator,8.3.1,Platform-Hardware,8,,Backlog
+B-25,Occupancy sensor ingestion,Backend,Operator,8.3.2,Platform-Hardware,5,,Backlog
+B-26,"Multi-channel notification delivery service (push, SMS, email)",Backend,System,7.1.1,Notifications,5,,Backlog
+B-27,Driver event notification templates,Backend,Driver,7.1.2,Notifications,3,,Backlog
+B-28,Operator integration-health alerts after 5 minutes of silence,Backend,Operator,7.1.3,Notifications,3,,Backlog
+B-29,"Facility configuration backend (capacity, hours, restrictions, amenities)",Backend,Operator,5.1.1,Operator-Dashboard,3,,Backlog
+B-30,"Hardware credential linking, connection test and draft state",Backend,Operator,5.1.3,Operator-Dashboard,5,,Backlog
+B-31,Rate schedule backend including taxes and fees,Backend,Operator,5.2.1,Operator-Dashboard,3,,Backlog
+B-32,Dynamic-pricing rules engine with occupancy and event triggers,Backend,Operator,5.2.2,Operator-Dashboard,5,,Backlog
+B-33,Price preview and effective-date handling for existing reservations,Backend,Operator,5.2.3,Operator-Dashboard,3,,Backlog
+B-34,Occupancy threshold alerts and pause of same-day reservations,Backend,Operator,5.3.2,Operator-Dashboard,3,,Backlog
+B-35,Encryption in transit and at rest with key management,Backend,System,1.4.1,Accounts-Auth-Security,3,,Backlog
+B-36,Personal-data export and deletion tools,Backend,Both,1.4.2,Accounts-Auth-Security,3,,Backlog
+B-37,iOS application shell and App Store setup,Backend,Driver,8.4.1,Platform-Hardware,5,,Backlog
+B-38,Android application shell and Google Play setup,Backend,Driver,8.4.2,Platform-Hardware,5,,Backlog
+B-39,Responsive web SPA shell with WCAG 2.1 AA accessibility baseline,Backend,Both,8.4.3,Platform-Hardware,5,,Backlog
+B-40,Unit-test framework with 80% coverage gate in CI,Backend,System,9.1.1,QA-Release,5,Sprint 1,To Do
+R-01,Occupancy report by facility and date range,Reporting,Operator,6.1.1,Reporting-Analytics,3,,Backlog
+R-02,"Revenue report by facility, date range and rate type",Reporting,Operator,6.1.1,Reporting-Analytics,3,,Backlog
+R-03,Utilization report with comparison periods,Reporting,Operator,6.1.1,Reporting-Analytics,2,,Backlog
+R-04,CSV export for operator reports,Reporting,Operator,6.1.2,Reporting-Analytics,2,,Backlog
+R-05,PDF export for operator reports,Reporting,Operator,6.1.2,Reporting-Analytics,1,,Backlog
+R-06,Scheduled weekly email summary for operators,Reporting,Operator,6.1.3,Reporting-Analytics,3,,Backlog
+R-07,Anonymized aggregated occupancy feed for city transportation departments,Reporting,System,6.2.1,Reporting-Analytics,5,,Backlog
+R-08,"Itemized receipt generation (in-app, email, PDF)",Reporting,Driver,4.2.1,Payments-Finance,3,,Backlog
+R-09,Driver reservation history with 24-month retention,Reporting,Driver,4.2.2,Payments-Finance,2,,Backlog
+R-10,Daily settlement reconciliation against provider settlement file,Reporting,Operator,4.3.2,Payments-Finance,8,,Backlog
+R-11,Export to accounting system,Reporting,Operator,4.3.3,Payments-Finance,3,,Backlog
+R-12,"Refund workflow with reason, actor and second approval above limit",Reporting,Operator,4.3.1,Payments-Finance,5,,Backlog
+R-13,Audit log with before/after values and 12-month retention,Reporting,Operator,1.4.3,Accounts-Auth-Security,5,,Backlog
