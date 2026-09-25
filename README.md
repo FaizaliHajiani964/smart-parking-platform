@@ -12,8 +12,9 @@ The document grows every week as the course covers a new project-management topi
 
 | File | Version | Date | Contents |
 |---|---|---|---|
-| `SmartParking_SRS_v2.0.docx` | 2.0 | Sep 17, 2026 | Sections 1–7 (v1.0): vision & scope, market research, overall description, functional and non-functional requirements, 18 use cases. **New in v2.0:** Section 8 – three-level Work Breakdown Structure (9 modules, 29 deliverables, 79 work items, 356 story points); Section 9 – estimation approach, 5 milestones, dependency-driven draft schedule and Gantt chart (Sep 2026 – Apr 2027). |
+| `SmartParking_SRS_v3.0.docx` | 3.0 | Sep 24, 2026 | Sections 1–7: vision & scope, market research, overall description, functional and non-functional requirements, 18 use cases. Section 8 – three-level Work Breakdown Structure (9 modules, 29 deliverables, 79 work items, 356 story points). Section 9 – estimation approach, 5 milestones, dependency-driven draft schedule and Gantt chart (Sep 2026 – Apr 2027). **New in v3.0:** Section 10 – sprint backlog and board management (84-card Jira backlog traced to the WBS, board conventions, Sprint 1 commitment of 28 of 30 story points). |
 | `SmartParking_Gantt_v2.0.xlsx` | 2.0 | Sep 17, 2026 | Editable Gantt chart. `Assumptions` sheet (days per story point, team sizes, cushion, holidays) → `WBS` sheet (story points per item) → `Gantt` sheet (durations, FS/SS predecessors, start/end formulas, weekly bars). Change a blue input cell and the whole timeline re-computes. |
+| `SmartParking_Backlog_v3.0.csv` | 3.0 | Sep 24, 2026 | Full 84-card backlog behind the Jira board: card ID, title, category, actor, WBS parent, module, story points, sprint and board column. 309 story points on the board, 47 deferred to the Beta milestone, reconciling to the 356-point project total. |
 
 ## Version history
 
@@ -21,20 +22,25 @@ The document grows every week as the course covers a new project-management topi
 |---|---|---|
 | 1.0 | 2026-09-08 | HW1 – Project Kickoff & SRS Initiation |
 | 2.0 | 2026-09-17 | HW2 – Work Breakdown Structure, estimation, draft timeline and Gantt chart |
+| 3.0 | 2026-09-24 | HW3 – Sprint backlog, board conventions and Sprint 1 plan |
 
 ## Repository layout
 
 ```
-/SmartParking_SRS_v2.0.docx     ← current project document (Word)
-/SmartParking_Gantt_v2.0.xlsx   ← editable Gantt / schedule model (Excel)
-/figures/                       ← diagrams embedded in the document
-    fig1_context.png            ← competitive placement map (v1.0)
-    fig2_positioning.png        ← system context diagram (v1.0)
-    fig3_wbs_tree.png           ← WBS levels 0–2 (v2.0)
-    fig4_gantt_v2.png           ← draft Gantt chart (v2.0)
-/ai-usage/                      ← AI usage log, one file per homework
+/SmartParking_SRS_v3.0.docx       ← current project document (Word)
+/SmartParking_Gantt_v2.0.xlsx     ← editable Gantt / schedule model (Excel)
+/SmartParking_Backlog_v3.0.csv    ← backlog behind the Jira sprint board
+/figures/                         ← diagrams embedded in the document
+    fig1_context.png              ← competitive placement map (v1.0)
+    fig2_positioning.png          ← system context diagram (v1.0)
+    fig3_wbs_tree.png             ← WBS levels 0–2 (v2.0)
+    fig4_gantt_v2.png             ← draft Gantt chart (v2.0)
+    fig5_sprint_board.png         ← Sprint 1 board (v3.0)
+    fig6_product_backlog.png      ← full product backlog (v3.0)
+/ai-usage/                        ← AI usage log, one file per homework
     AI_Usage_Log_HW2.md
-/README.md                      ← this file
+    AI_Usage_Log_HW3.md
+/README.md                        ← this file
 ```
 
 ## Weekly deliverable checklist
